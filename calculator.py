@@ -59,7 +59,7 @@ def grading_system(e):
     document.getElementById("sub10").innerHTML = '{} {}'.format(subject [9], num10)
     document.getElementById("sub11").innerHTML = '{} {}'.format(subject [10], num11)
 
-    # DISPLAY ERROR WHEN GRADE VALUE IS BELOW 0 OR EXCEED 100
+    # DISPLAY ERROR WHEN AT LEAST ONE GRADE VALUE IS BELOW 0 OR EXCEED 100
     if not (0 <= num1 <= 100 
             and 0 <= num2 <= 100 
             and 0 <= num3 <= 100 
@@ -74,8 +74,19 @@ def grading_system(e):
         
         document.getElementById("average").innerText = "Input is undefined. Please enter values from 0 to 100."
         document.getElementById("grade").innerText = (grade [0])
+        document.getElementById("sub1").innerHTML = '{} {}'.format(subject [0], "Invalid.")
+        document.getElementById("sub2").innerHTML = '{} {}'.format(subject [1], "Invalid.")
+        document.getElementById("sub3").innerHTML = '{} {}'.format(subject [2], "Invalid.")
+        document.getElementById("sub4").innerHTML = '{} {}'.format(subject [3], "Invalid.")
+        document.getElementById("sub5").innerHTML = '{} {}'.format(subject [4], "Invalid.")
+        document.getElementById("sub6").innerHTML = '{} {}'.format(subject [5], "Invalid.")
+        document.getElementById("sub7").innerHTML = '{} {}'.format(subject [6], "Invalid.")
+        document.getElementById("sub8").innerHTML = '{} {}'.format(subject [7], "Invalid.")
+        document.getElementById("sub9").innerHTML = '{} {}'.format(subject [8], "Invalid.")
+        document.getElementById("sub10").innerHTML = '{} {}'.format(subject [9], "Invalid.")
+        document.getElementById("sub11").innerHTML = '{} {}'.format(subject [10], "Invalid.")
         return
-    
+
     # CONDITIONAL STATEMENT FOR PASSING GRADE
     if average >= 75:
         document.getElementById("grade").innerText = (grade [1])
