@@ -136,7 +136,7 @@ h5 {
 input[type="text"],
 select {
     background-color: whitesmoke;
-    border: 1px #adb2b6 solid;
+    border: 2px #adb2b6 solid;
     border-radius: 5px;
     box-sizing: border-box;
     color: black;
@@ -152,7 +152,7 @@ select {
 input[type="text"]:hover,
 select:hover {
     background-color: #46CFFB;
-    border: 1px #04588C solid;
+    border: 2px #1f4f6d solid;
     border-radius: 5px;
     box-sizing: border-box;
     color: black;
@@ -166,28 +166,28 @@ select:hover {
 input[type="number"] {
     width: 200px;
     background-color: whitesmoke;
-    border: 1px #adb2b6 solid;
+    border: 2px #adb2b6 solid;
     border-radius: 5px;
     box-sizing: border-box;
     color: black;
     font-weight: normal;
+    text-align: justify;
+    transition: 0.85s ease;
+    text-align: justify;
+    transition: 0.85s ease;
     padding: 5px;
-    text-align: justify;
-    transition: 0.85s ease;
-    text-align: justify;
-    transition: 0.85s ease;
 
 }
 
 input[type="number"]:hover {
     width: 200px;
     background-color: #46CFFB;
-    border: 1px #04588C solid;
+    border: 2px #1f4f6d solid;
     border-radius: 5px;
     box-sizing: border-box;
     color: black;
     font-weight: normal;
-    padding: 5px;
     text-align: justify;
     transition: 0.85s ease;
+    padding: 5px;
 }
