@@ -14,6 +14,7 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
+    box-shadow: 0 5px 5px #46CFFB;
     color: aliceblue;
     font-size: 16px;
     font-weight: 700;
@@ -29,6 +30,7 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
+    box-shadow: 0 5px 5px #1ec98a;
     color: aliceblue;
     font-size: 18px;
     font-weight: 700;
@@ -39,11 +41,11 @@ body {
 
 .container-fluid {
     align-content: start;
-    background-color: #FFFFFF;
-    border-left: 5px #adb2b6 solid;
-    border-top: 5px #adb2b6 solid;
-    border-right: 5px #787879 solid;
-    border-bottom: 5px #787879 solid;
+    background-color: aliceblue;
+    border-left: 5px #04588C solid;
+    border-top: 5px #04588C solid;
+    border-right: 5px #0575bb solid;
+    border-bottom: 5px #0575bb solid;
     border-radius: 10px;
     max-width: 750px;
     margin-top: 5px;
@@ -59,6 +61,7 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
+    box-shadow: 0 5px 5px #e9afd7;
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 400;
@@ -73,6 +76,7 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
+    box-shadow: 0 5px 5px #e9deaf;
     color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 400;
@@ -97,6 +101,7 @@ body {
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
+    box-shadow: 0 2px 2px #5a6268;
     color: aliceblue;
     font-weight: bold;
     padding: 5px;
@@ -138,6 +143,7 @@ select {
     background-color: whitesmoke;
     border: 2px #adb2b6 solid;
     border-radius: 5px;
+    box-shadow: 0 2px 2px #67aedd;
     box-sizing: border-box;
     color: black;
     font-weight: normal;
@@ -168,6 +174,7 @@ input[type="number"] {
     background-color: whitesmoke;
     border: 2px #adb2b6 solid;
     border-radius: 5px;
+    box-shadow: 0 2px 2px #67aedd;
     box-sizing: border-box;
     color: black;
     font-weight: normal;
@@ -180,6 +187,19 @@ input[type="number"] {
 }
 
 input[type="number"]:hover {
+    width: 200px;
+    background-color: #46CFFB;
+    border: 2px #1f4f6d solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: black;
+    font-weight: normal;
+    text-align: justify;
+    transition: 0.85s ease;
+    padding: 5px;
+}
+
+input[type="number"]:hover::after {
     width: 200px;
     background-color: #46CFFB;
     border: 2px #1f4f6d solid;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <title>Student Grade Calculator</title>
+
+</head>
+
+<body>
+    <!-- STUDENT GRADE CALCULATOR -->
+    <div class="container-fluid mt-5 mb-5">
+        <h1>Student Grade Calculator</h1>
+        <br>
+        <!-- NAME AND SECTION INPUT -->
+        <div class="container grades">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for=" firstname" class="label">First Name</label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" id="firstname" placeholder="Enter first name" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="middlename" class="label">Middle Name</label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" id="middlename" placeholder="Enter middle name">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="lastname" class="label">Last Name</label>
+                </div>
+                <div class="col-sm-10">
+                    <input type="text" id="lastname" placeholder="Enter last name" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="level" class="label">Grade Level</label>
+                </div>
+                <div class="col-sm-10">
+                    <select name="level" id="level" required>
+                        <option value="Grade 7">Grade 7</option>
+                        <option value="Grade 8">Grade 8</option>
+                        <option value="Grade 9">Grade 9</option>
+                        <option value="Grade 10">Grade 10</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="name" class="label">Section</label>
+                </div>
+                <div class="col-sm-10">
+                    <select name="section" id="section" required>
+                        <option value="Emerald">Emerald</option>
+                        <option value="Ruby">Ruby</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <!-- SUBJECT INPUT -->
+        <div class="container grades">
+            <h2>Enter your grades:</h2>
+            <div class="row cols-2">
+                <div class="col-6 mb-2">
+                    <label for="num1" class="label">Science</label>
+                    <input type="number" id="num1" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num2" class="label">Math</label>
+                    <input type="number" id="num2" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num3" class="label">English</label>
+                    <input type="number" id="num3" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num4" class="label">Filipino</label>
+                    <input type="number" id="num4" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num5" class="label">SS</label>
+                    <input type="number" id="num5" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num6" class="label">VED</label>
+                    <input type="number" id="num6" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num7" class="label">ICT</label>
+                    <input type="number" id="num7" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num8" class="label">TLE</label>
+                    <input type="number" id="num8" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num9" class="label">Music & Arts</label>
+                    <input type="number" id="num9" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num10" class="label">PEH</label>
+                    <input type="number" id="num10" min="0" max="100" placeholder="Enter grade" required>
+                </div>
+
+                <div class="col-6 mb-2">
+                    <label for="num11" class="label">LT/CAT</label>
+                    <input type="number" id="num11" min="0" max="100" placeholder="Enter grade" required>
+                    <br>
+                </div>
+
+                <div class="col-12 mt-4 mb-4">
+                    <button class="btn" py-click="grading_system">Calculate GWA!</button>
+                </div>
+            </div>
+            <div class="container mt-4 mb-5">
+                <div class="container compute">
+                    <h3 id="studentname"></h3>
+                    <h3 id="studentsection"></h3>
+
+                    <p id="subject"></p>
+                    <p id="sub1"></p>
+                    <p id="sub2"></p>
+                    <p id="sub3"></p>
+                    <p id="sub4"></p>
+                    <p id="sub5"></p>
+                    <p id="sub6"></p>
+                    <p id="sub7"></p>
+                    <p id="sub8"></p>
+                    <p id="sub9"></p>
+                    <p id="sub10"></p>
+                    <p id="sub11"></p>
+                </div>
+                <br>
+                <div class="container compute2">
+                    <h5 id="average"></h5>
+                    <h5 id="grade"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--PYTHON SCRIPT-->
+    <script type="py" src="calculator.py"></script>
+</body>
+
+</html>

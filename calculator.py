@@ -10,17 +10,17 @@ def grading_system(e):
     section = document.getElementById("section").value
 
     # FLOAT VARIABLES FOR GRADE CALCULATION THROUGH ID FROM CALCUATOR.HTML
-    num1 = float(document.getElementById("num1").value)
-    num2 = float(document.getElementById("num2").value)
-    num3 = float(document.getElementById("num3").value)
-    num4 = float(document.getElementById("num4").value)
-    num5 = float(document.getElementById("num5").value)
-    num6 = float(document.getElementById("num6").value)
-    num7 = float(document.getElementById("num7").value)
-    num8 = float(document.getElementById("num8").value)
-    num9 = float(document.getElementById("num9").value)
-    num10 = float(document.getElementById("num10").value)
-    num11 = float(document.getElementById("num11").value)
+    num1 = float(document.getElementById("num1").value or 0)
+    num2 = float(document.getElementById("num2").value or 0)
+    num3 = float(document.getElementById("num3").value or 0)
+    num4 = float(document.getElementById("num4").value or 0)
+    num5 = float(document.getElementById("num5").value or 0)
+    num6 = float(document.getElementById("num6").value or 0)
+    num7 = float(document.getElementById("num7").value or 0)
+    num8 = float(document.getElementById("num8").value or 0)
+    num9 = float(document.getElementById("num9").value or 0)
+    num10 = float(document.getElementById("num10").value or 0)
+    num11 = float(document.getElementById("num11").value or 0)
 
     # CALCULATES THE AVERAGE OF THE 11 SUBJECTS IN JUNIOR HIGH SCHOOL
     average = (num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11)/11
